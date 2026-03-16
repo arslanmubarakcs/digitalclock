@@ -1,0 +1,218 @@
+/* Converted from style.css to App.css */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,500i,600,600i,700,700i,800|Open+Sans:400,400i,600,600i,700,700i,800&display=swap');
+
+/* Typography */
+body {
+  background: #fff;
+  color: #555;
+  font-family: "Open Sans", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased !important;
+  line-height: 26px;
+  font-size: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #212121;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+/* Header Styles */
+.header-one {
+  background: #23282d;
+}
+
+.header-one .logo-area {
+  padding: 30px 0;
+}
+
+ul.top-info-box {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+@media (max-width: 767px) {
+  ul.top-info-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+ul.top-info-box li {
+  position: relative;
+  float: left;
+  margin-left: 0;
+  border-right: 1px solid #dedede;
+  padding-right: 25px;
+  margin-right: 25px;
+}
+
+@media (max-width: 767px) {
+  ul.top-info-box li {
+    border: 0;
+    text-align: center;
+    margin: 0;
+    padding: 0 20px;
+    margin-top: 10px;
+  }
+}
+
+/* Banner Slider */
+.banner-carousel-item {
+  position: relative;
+}
+
+.overlay-image {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 999;
+  border-radius: 10px;
+  height: 120px;
+  width: 120px;
+}
+
+@media screen and (max-width: 768px) {
+  .overlay-image {
+    display: none;
+  }
+  
+  .slide-title {
+    font-size: 15px;
+    font-weight: 200;
+  }
+}
+
+/* Features Section */
+.ts-features {
+  padding: 70px 0;
+  position: relative;
+}
+
+.into-sub-title {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #840505;
+  margin-top: 20px;
+}
+
+/* Cards */
+@media screen and (max-width: 768px) {
+  .card-wrapper {
+    margin-bottom: 20px;
+  }
+  
+  .card-wrapper h2 {
+    font-size: 15px;
+  }
+}
+
+/* Footer */
+.footer {
+  background-color: #7F1B15;
+  color: #999;
+}
+
+.footer-main {
+  padding: 80px 0 60px;
+}
+
+.footer .widget-title {
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+  margin: 0 0 30px;
+  padding-left: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  border-left: 3px solid #ffb600;
+}
+
+/* Buttons */
+.btn-primary {
+  background: #911616;
+  border: 0;
+  border-radius: 3px;
+  padding: 12px 20px 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  transition: 350ms;
+  font-size: 14px;
+}
+
+.btn-primary:hover {
+  background: #6b1010;
+  color: #fff;
+}
+
+/* Company Logo Slider */
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-250px * 7)); }
+}
+
+.slider {
+  height: 200px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(250px * 14);
+  align-items: center;
+  animation: scroll 40s linear infinite;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 250px;
+}
+
+.slide img {
+  height: 20vh;
+  width: auto;
+}
+
+.paused .slide-track {
+  animation-play-state: paused;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .section-sub-title {
+    font-size: 28px;
+  }
+  
+  .banner-carousel .banner-carousel-item {
+    height: 550px;
+  }
+}
+
+@media (max-width: 575px) {
+  .banner-carousel .banner-carousel-item {
+    height: 450px;
+  }
+  
+  .slide-sub-title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
